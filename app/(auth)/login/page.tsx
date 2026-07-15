@@ -5,7 +5,7 @@ import { login } from '../actions';
 export default function LoginPage({
   searchParams,
 }: {
-  searchParams: { message: string }
+  searchParams: { message?: string, email?: string }
 }) {
   return (
     <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] flex flex-col font-sans">
