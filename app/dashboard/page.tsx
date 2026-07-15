@@ -232,7 +232,7 @@ export default async function DashboardPage() {
               No recent activity found. Add an account and some transactions!
             </div>
           ) : (
-            Object.entries(groupedTransactions).map(([monthStr, monthTransactions], mIndex, mArray) => (
+            (Object.entries(groupedTransactions) as [string, typeof transactions][]).map(([monthStr, monthTransactions], mIndex, mArray) => (
               <div key={monthStr}>
                 <div className="px-2 pt-2 pb-3 mb-2 border-b border-white/5">
                   <h3 className="text-xl font-bold text-[var(--color-ink)] tracking-tight">{monthStr}</h3>
