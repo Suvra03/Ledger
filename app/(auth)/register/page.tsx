@@ -5,7 +5,7 @@ import { signup } from '../actions';
 export default function RegisterPage({
   searchParams,
 }: {
-  searchParams: { message: string }
+  searchParams: { message?: string, email?: string }
 }) {
   return (
     <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] flex flex-col font-sans">
