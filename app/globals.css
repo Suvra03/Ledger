@@ -2,4 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom globals can go here */
+:root {
+    /* Our custom design system colors (Dark Mode) */
+    --color-paper: #0B0E0C;      /* Deep dark background */
+    --color-surface: #131815;    /* Slightly lighter card surface */
+    --color-ink: #EDEFEA;        /* Off-white text */
+    --color-ink-soft: #8B9A92;   /* Muted grey-green text */
+    --color-rule: #232C27;       /* Dark borders */
+    --color-jade: #4ADE80;       /* Income, positive amounts (brightened for dark mode) */
+    --color-rust: #F87171;       /* Expense, negative amounts (brightened for dark mode) */
+    --color-gold: #D4AF37;       /* Focus rings, highlights */
+}
+
+body {
+    /* Set the default background and text color for the whole app */
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+}
